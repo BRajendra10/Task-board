@@ -9,9 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
+
     <main>
+        <!-- task record -->
+        <section class="records" style="grid-area: panel-1;">
+            <h2>My tasks</h2>
+
+            <div class="task-records">
+                <div class="record">
+                    <span>Completed: </span>
+                    <span>0</span>
+                </div>
+                <div class="record">
+                    <span>Uncompleted: </span>
+                    <span>0</span>
+                </div>
+                <div class="record">
+                    <span>Total: </span>
+                    <span>0</span>
+                </div>
+            </div>
+        </section>
+
         <!-- Form section -->
-        <section>
+        <section class="form-section" style="grid-area: panel-2;">
             <form id="form">
                 <h2>Add new task</h2>
 
@@ -28,14 +49,38 @@
 
                 <button id="form-btn">Add task</button>
             </form>
+        </section>
+
+        <section style="grid-area: panel-3;">
+            <h2>Task lists</h2>
 
             <div class="task-list">
-                <h2>Task lists</h2>
-
                 <div class="task">
                     <input type="checkbox" />
                     <div class="task-content">
-                        <p>Create auth system</p>
+                        <p>Create auth system and document anldnl adfa</p>
+                        <span class="priority low">low</span>
+                    </div>
+                    <div class="task-actions">
+                        <button><i class="ri-edit-line"></i></button>
+                        <button><i class="ri-delete-bin-line"></i></button>
+                    </div>
+                </div>
+                <div class="task">
+                    <input type="checkbox" />
+                    <div class="task-content">
+                        <p>Create auth system and document anldnl adfa</p>
+                        <span class="priority low">low</span>
+                    </div>
+                    <div class="task-actions">
+                        <button><i class="ri-edit-line"></i></button>
+                        <button><i class="ri-delete-bin-line"></i></button>
+                    </div>
+                </div>
+                <div class="task">
+                    <input type="checkbox" />
+                    <div class="task-content">
+                        <p>Create auth system and document anldnl adfa</p>
                         <span class="priority low">low</span>
                     </div>
                     <div class="task-actions">
@@ -65,9 +110,19 @@
                         <button><i class="ri-delete-bin-line"></i></button>
                     </div>
                 </div>
+                <div class="task">
+                    <input type="checkbox" />
+                    <div class="task-content">
+                        <p>Build a LMS</p>
+                        <span class="priority urgent">high</span>
+                    </div>
+                    <div class="task-actions">
+                        <button><i class="ri-edit-line"></i></button>
+                        <button><i class="ri-delete-bin-line"></i></button>
+                    </div>
+                </div>
             </div>
         </section>
-
     </main>
 </body>
 </html>
