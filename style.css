@@ -46,7 +46,7 @@ section h2 {
     width: 100%;
     height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1em;
 }
 
@@ -149,4 +149,15 @@ form button {
     border-radius: 0.3em;
     background: rebeccapurple;
     color: white;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-areas: 
+        "panel-2"
+        "panel-1"
+        "panel-3";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }

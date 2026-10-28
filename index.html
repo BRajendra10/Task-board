@@ -22,11 +22,11 @@
                 </div>
                 <div class="record">
                     <span>Uncompleted: </span>
-                    <span>0</span>
+                    <span>5</span>
                 </div>
                 <div class="record">
                     <span>Total: </span>
-                    <span>0</span>
+                    <span>5</span>
                 </div>
             </div>
         </section>
@@ -37,10 +37,11 @@
                 <h2>Add new task</h2>
 
                 <label>New task</label>
-                <input id="task-input" type="text" placeholder="Enter new task" />
+                <input id="task-input" type="text" placeholder="Enter new task" required />
 
                 <label>Priority</label>
-                <select name="priority" id="priority-select">
+                <select name="priority" id="priority-select" required>
+                    <option value="none">Select priority</option>
                     <option value="low">low</option>
                     <option value="medium">medium</option>
                     <option value="high">high</option>
